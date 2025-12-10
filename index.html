@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dra. Helena Monteiro - Advocacia Estratégica e Consultoria Jurídica"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+
+    <!-- Segurança -->
+    <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+    <meta http-equiv="X-Frame-Options" content="DENY" />
+    <meta
+      http-equiv="Referrer-Policy"
+      content="strict-origin-when-cross-origin"
+    />
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block" />
+    <meta
+      http-equiv="Permissions-Policy"
+      content="geolocation=(), microphone=(), camera=()"
+    />
+
+    <title>Dra. Helena Monteiro | Advocacia Estratégica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="js/tailwind-config.js"></script>
+  </head>
+  <body class="mx-auto">
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 w-full z-50 py-4 md:py-6">
+      <div
+        class="container mx-auto px-4 md:px-6 flex justify-between items-center"
+      >
+        <a
+          href="#home"
+          class="text-2xl md:text-3xl font-display font-bold text-primary"
+        >
+          Helena <span class="text-main">Monteiro</span>
+        </a>
+
+        <nav class="hidden lg:flex items-center gap-8">
+          <a
+            href="#home"
+            class="text-sm font-medium text-gray hover:text-main transition-colors"
+            >Início</a
+          >
+          <a
+            href="#about"
+            class="text-sm font-medium text-gray hover:text-main transition-colors"
+            >Sobre</a
+          >
+          <a
+            href="#services"
+            class="text-sm font-medium text-gray hover:text-main transition-colors"
+            >Serviços</a
+          >
+          <!-- <a
+            href="#expertise"
+            class="text-sm font-medium text-gray hover:text-main transition-colors"
+            >Expertise</a
+          > -->
+          <a
+            href="#testimonials"
+            class="text-sm font-medium text-gray hover:text-main transition-colors"
+            >Clientes</a
+          >
+          <a
+            href="#faq"
+            class="text-sm font-medium text-gray hover:text-main transition-colors"
+            >FAQ</a
+          >
+          <a
+            href="#contact"
+            class="px-6 py-2 bg-main text-white rounded-full text-sm font-semibold hover:bg-opacity-90 transition-all"
+          >
+            Contato
+          </a>
+
+          <div class="flex gap-2 my-2 justify-start">
+            <a
+              href="https://linkedin.com/in/rafaelsfront"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="flex items-center text-main hover:brightness-[2] transition-all"
+            >
+              <i class="bi bi-linkedin text-2xl"></i>
+            </a>
+            <!-- <a
+              href="https://github.com/1faeell"
+              class="flex items-center text-main hover:bg-primary hover:text-white transition-all"
+            >
+              <i class="bi bi-github text-2xl"></i>
+            </a> -->
+            <a
+              href="https://instagram.com/fael.front"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="flex items-center text-main hover:brightness-[2] transition-all"
+            >
+              <i class="bi bi-instagram text-2xl"></i>
+            </a>
+            <a
+              href="https://wa.me/5571988327708"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="flex items-center text-main hover:brightness-[2] transition-all"
+            >
+              <i class="bi bi-whatsapp text-2xl"></i>
+            </a>
+          </div>
+        </nav>
+
+        <button id="menuToggle" class="lg:hidden text-2xl text-primary">
+          <i class="bi bi-list"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobileMenu"
+      class="mobile-menu fixed top-0 right-0 w-full h-screen bg-white z-40 lg:hidden flex flex-col items-center justify-center gap-8"
+    >
+      <a
+        href="#home"
+        class="mobile-link text-2xl font-display font-semibold text-primary"
+        >Início</a
+      >
+      <a
+        href="#about"
+        class="mobile-link text-2xl font-display font-semibold text-primary"
+        >Sobre</a
+      >
+      <a
+        href="#services"
+        class="mobile-link text-2xl font-display font-semibold text-primary"
+        >Serviços</a
+      >
+      <!-- <a
+        href="#expertise"
+        class="mobile-link text-2xl font-display font-semibold text-primary"
+        >Expertise</a
+      > -->
+      <a
+        href="#testimonials"
+        class="mobile-link text-2xl font-display font-semibold text-primary"
+        >Clientes</a
+      >
+      <a
+        href="#faq"
+        class="mobile-link text-2xl font-display font-semibold text-primary"
+        >FAQ</a
+      >
+      <a
+        href="#contact"
+        class="mobile-link text-2xl font-display font-semibold text-main"
+        >Contato</a
+      >
+      <div class="flex gap-2 my-2 justify-center">
+        <a
+          href="https://linkedin.com/in/rafaelsfront"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="flex items-center text-main hover:brightness-[2] transition-all"
+        >
+          <i class="bi bi-linkedin text-2xl"></i>
+        </a>
+        <!-- <a
+              href="https://github.com/1faeell"
+              class="flex items-center text-main hover:bg-primary hover:text-white transition-all"
+            >
+              <i class="bi bi-github text-2xl"></i>
+            </a> -->
+        <a
+          href="https://instagram.com/fael.front"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="flex items-center text-main hover:brightness-[2] transition-all"
+        >
+          <i class="bi bi-instagram text-2xl"></i>
+        </a>
+        <a
+          href="https://wa.me/5571988327708"
+          rel="noopener noreferrer"
+          target="_blank"
+          class="flex items-center text-main hover:brightness-[2] transition-all"
+        >
+          <i class="bi bi-whatsapp text-2xl"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="min-h-screen flex items-center pt-20 md:pt-24 pb-12 md:pb-20 relative overflow-hidden"
+    >
+      <div class="hero-pattern absolute inset-0 opacity-50"></div>
+
+      <div class="container mx-auto px-4 md:px-6 relative z-10">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center max-lg:text-center"
+        >
+          <div data-aos="fade-up">
+            <span
+              class="inline-block px-4 py-2 bg-main/10 text-main text-xs md:text-sm font-semibold rounded-full mb-4 md:mb-6"
+            >
+              Advocacia Estratégica
+            </span>
+            <h1
+              class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold text-primary leading-tight mb-4 md:mb-6"
+            >
+              Transformando<br />
+              <span class="text-main">desafios legais</span><br />
+              em oportunidades
+            </h1>
+            <p
+              class="text-base md:text-lg lg:text-xl text-gray mb-6 md:mb-8 leading-relaxed max-lg:w-[600px] max-lg:w-full max-lg:mx-auto"
+            >
+              Soluções jurídicas inteligentes e personalizadas para empresas e
+              profissionais que buscam segurança e crescimento sustentável.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 max-lg:justify-center">
+              <a
+                href="#contact"
+                class="btn-primary px-6 md:px-8 py-3 md:py-4 bg-main text-white rounded-full font-semibold text-sm md:text-base hover:shadow-lg transition-all text-center"
+              >
+                Agende uma Consultoria
+              </a>
+              <a
+                href="#services"
+                class="px-6 md:px-8 py-3 md:py-4 border-2 border-primary text-primary rounded-full font-semibold text-sm md:text-base hover:bg-primary hover:text-white transition-all text-center"
+              >
+                Conheça os Serviços
+              </a>
+            </div>
+          </div>
+
+          <div data-aos="flip-left" class="relative hidden lg:block">
+            <div
+              class="absolute inset-0 bg-gradient-to-br from-main/20 to-accent/20 rounded-3xl transform rotate-6"
+            ></div>
+            <div
+              class="relative bg-white rounded-3xl shadow-2xl p-8 transform -rotate-3"
+            >
+              <div
+                class="aspect-square bg-gradient-to-br from-primary to-accent rounded-2xl flex items-center justify-center"
+              >
+                <img src="assets/images/advogada01.png" alt="Advogada Helena" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-12 md:py-16 bg-primary text-white">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+          <div class="text-center" data-aos="fade-up" data-aos-delay="0">
+            <div
+              class="brightness-[1.3] text-3xl md:text-4xl lg:text-5xl font-display font-bold text-main mb-2 stat-number"
+            >
+              15+
+            </div>
+            <div
+              class="text-xs md:text-sm text-gray-300 uppercase tracking-wider"
+            >
+              Anos de Experiência
+            </div>
+          </div>
+          <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="brightness-[1.3] text-3xl md:text-4xl lg:text-5xl font-display font-bold text-main mb-2 stat-number"
+            >
+              500+
+            </div>
+            <div
+              class="text-xs md:text-sm text-gray-300 uppercase tracking-wider"
+            >
+              Clientes Atendidos
+            </div>
+          </div>
+          <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="brightness-[1.3] text-3xl md:text-4xl lg:text-5xl font-display font-bold text-main mb-2 stat-number"
+            >
+              95%
+            </div>
+            <div
+              class="text-xs md:text-sm text-gray-300 uppercase tracking-wider"
+            >
+              Taxa de Sucesso
+            </div>
+          </div>
+          <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="brightness-[1.3] text-3xl md:text-4xl lg:text-5xl font-display font-bold text-main mb-2 stat-number"
+            >
+              R$80M
+            </div>
+            <div
+              class="text-xs md:text-sm text-gray-300 uppercase tracking-wider"
+            >
+              Em Causas
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 md:py-24 lg:py-32">
+      <div class="container mx-auto px-4 md:px-6">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 lg:gap-20 items-center"
+        >
+          <div data-aos="fade-right">
+            <span
+              class="text-main text-xs md:text-sm font-semibold uppercase tracking-wider mb-3 block"
+              >Conheça a Especialista</span
+            >
+            <h2
+              class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary mb-4 md:mb-6"
+            >
+              Dra. Helena Monteiro
+            </h2>
+            <p
+              class="text-base md:text-lg text-gray mb-4 md:mb-6 leading-relaxed"
+            >
+              Com mais de 15 anos de atuação, especializo-me em Direito
+              Empresarial, Contratos e Resolução de Conflitos. Minha abordagem
+              combina profundo conhecimento técnico com visão estratégica de
+              negócios.
+            </p>
+            <p
+              class="text-base md:text-lg text-gray mb-6 md:mb-8 leading-relaxed"
+            >
+              Graduada em Direito pela USP, com MBA em Gestão Empresarial pela
+              FGV e certificação internacional em Mediação. Membro da OAB/SP e
+              da Câmara de Mediação e Arbitragem.
+            </p>
+
+            <div class="space-y-4 mb-6 md:mb-8">
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-main/10 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="bi bi-award text-main text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary text-sm md:text-base">
+                    Especialização em Direito Empresarial
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray">
+                    FGV - Fundação Getúlio Vargas
+                  </p>
+                </div>
+              </div>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 bg-main/10 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="bi bi-mortarboard text-main text-xl"></i>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-primary text-sm md:text-base">
+                    Graduação em Direito
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray">
+                    Universidade de São Paulo - USP
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex flex-wrap gap-3">
+              <span
+                class="px-4 py-2 bg-primary/5 text-primary text-xs md:text-sm font-medium rounded-full"
+                >OAB/SP 123.456</span
+              >
+              <span
+                class="px-4 py-2 bg-primary/5 text-primary text-xs md:text-sm font-medium rounded-full"
+                >Mediadora Certificada</span
+              >
+            </div>
+
+            <!-- CTA Sobre -->
+
+            <a
+              href="#contact"
+              class="inline-block w-full mt-6 px-8 md:px-10 py-6 bg-gradient-to-br from-main to-accent text-white text-center rounded-2xl font-bold text-sm md:text-base hover:shadow-2xl transform hover:scale-105 transition-all duration-500 ease-in-out"
+            >
+              Quero falar diretamente com a especialista
+            </a>
+          </div>
+
+          <div data-aos="flip-down" class="relative">
+            <div
+              class="absolute -inset-4 bg-gradient-to-br from-main/20 to-accent/20 rounded-3xl"
+            ></div>
+            <img
+              src="assets/images/advogada02.png"
+              alt="Dra. Helena Monteiro"
+              class="relative rounded-3xl shadow-2xl w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 md:py-24 lg:py-32 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-12 md:mb-16" data-aos="fade-down">
+          <span
+            class="text-main text-xs md:text-sm font-semiboaaaaald uppercase tracking-wider mb-3 block"
+            >O Que Fazemos</span
+          >
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary mb-4"
+          >
+            Áreas de Atuação
+          </h2>
+          <p class="text-base md:text-lg text-gray max-w-2xl mx-auto">
+            Serviços jurídicos completos e personalizados para cada necessidade
+          </p>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8"
+        >
+          <div
+            class="service-card bg-white p-6 md:p-8 rounded-2xl shadow-lg cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="0"
+            onclick="openModal('Direito Empresarial', 'Consultoria estratégica para empresas de todos os portes, desde startups até grandes corporações.', ['Constituição de Empresas', 'Contratos Comerciais', 'Fusões e Aquisições', 'Governança Corporativa', 'Due Diligence'])"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-xl flex items-center justify-center mb-4 md:mb-6"
+            >
+              <i class="bi bi-briefcase text-2xl md:text-3xl text-white"></i>
+            </div>
+            <h3
+              class="text-xl md:text-2xl font-display font-bold text-primary mb-3 md:mb-4"
+            >
+              Direito Empresarial
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray mb-4 md:mb-6 leading-relaxed"
+            >
+              Registro e proteção de marcas, patentes e criações intelectuais.
+            </p>
+            <span
+              class="text-main font-semibold text-xs md:text-sm flex items-center gap-2 group"
+            >
+              Saiba mais
+              <i
+                class="bi bi-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </span>
+          </div>
+
+          <div
+            class="service-card bg-white p-6 md:p-8 rounded-2xl shadow-lg cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            onclick="openModal('Contratos', 'Elaboração e revisão de contratos complexos com segurança jurídica total.', ['Contratos Comerciais', 'Contratos de Prestação de Serviços', 'Contratos Trabalhistas', 'Termos de Uso e Políticas', 'Análise de Riscos'])"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-xl flex items-center justify-center mb-4 md:mb-6"
+            >
+              <i class="bi bi-file-text text-2xl md:text-3xl text-white"></i>
+            </div>
+            <h3
+              class="text-xl md:text-2xl font-display font-bold text-primary mb-3 md:mb-4"
+            >
+              Contratos
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray mb-4 md:mb-6 leading-relaxed"
+            >
+              Elaboração e análise de contratos com clareza e segurança
+              jurídica.
+            </p>
+            <span
+              class="text-main font-semibold text-xs md:text-sm flex items-center gap-2 group"
+            >
+              Saiba mais
+              <i
+                class="bi bi-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </span>
+          </div>
+
+          <div
+            class="service-card bg-white p-6 md:p-8 rounded-2xl shadow-lg cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            onclick="openModal('Mediação e Arbitragem', 'Resolução de conflitos de forma ágil, sigilosa e eficiente.', ['Mediação Empresarial', 'Arbitragem Comercial', 'Negociação de Acordos', 'Resolução Extrajudicial', 'Câmara de Arbitragem'])"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-xl flex items-center justify-center mb-4 md:mb-6"
+            >
+              <i class="bi bi-shield-check text-2xl md:text-3xl text-white"></i>
+            </div>
+            <h3
+              class="text-xl md:text-2xl font-display font-bold text-primary mb-3 md:mb-4"
+            >
+              Mediação e Arbitragem
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray mb-4 md:mb-6 leading-relaxed"
+            >
+              Soluções alternativas para resolver conflitos de forma rápida e
+              eficaz.
+            </p>
+            <span
+              class="text-main font-semibold text-xs md:text-sm flex items-center gap-2 group"
+            >
+              Saiba mais
+              <i
+                class="bi bi-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </span>
+          </div>
+
+          <div
+            class="service-card bg-white p-6 md:p-8 rounded-2xl shadow-lg cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            onclick="openModal('Compliance', 'Programas de conformidade e prevenção de riscos para sua empresa.', ['Programa de Compliance', 'Auditoria Interna', 'Código de Conduta', 'Canal de Denúncias', 'Treinamentos'])"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-xl flex items-center justify-center mb-4 md:mb-6"
+            >
+              <i
+                class="bi bi-graph-up-arrow text-2xl md:text-3xl text-white"
+              ></i>
+            </div>
+            <h3
+              class="text-xl md:text-2xl font-display font-bold text-primary mb-3 md:mb-4"
+            >
+              Compliance
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray mb-4 md:mb-6 leading-relaxed"
+            >
+              Implementação de programas de conformidade e gestão de riscos.
+            </p>
+            <span
+              class="text-main font-semibold text-xs md:text-sm flex items-center gap-2 group"
+            >
+              Saiba mais
+              <i
+                class="bi bi-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </span>
+          </div>
+
+          <div
+            class="service-card bg-white p-6 md:p-8 rounded-2xl shadow-lg cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="400"
+            onclick="openModal('Proteção de Dados', 'Adequação à LGPD e proteção da privacidade de dados pessoais.', ['Adequação à LGPD', 'Mapeamento de Dados', 'Política de Privacidade', 'DPO as a Service', 'Resposta a Incidentes'])"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-xl flex items-center justify-center mb-4 md:mb-6"
+            >
+              <i class="bi bi-lock text-2xl md:text-3xl text-white"></i>
+            </div>
+            <h3
+              class="text-xl md:text-2xl font-display font-bold text-primary mb-3 md:mb-4"
+            >
+              Proteção de Dados
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray mb-4 md:mb-6 leading-relaxed"
+            >
+              Consultoria especializada em LGPD e privacidade de dados.
+            </p>
+            <span
+              class="text-main font-semibold text-xs md:text-sm flex items-center gap-2 group"
+            >
+              Saiba mais
+              <i
+                class="bi bi-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </span>
+          </div>
+          <div
+            class="service-card bg-white p-6 md:p-8 rounded-2xl shadow-lg cursor-pointer"
+            data-aos="fade-up"
+            data-aos-delay="500"
+            onclick="openModal('Propriedade Intelectual', 'Proteção e gestão dos ativos intangíveis da sua empresa.', ['Registro de Marcas', 'Patentes', 'Direitos Autorais', 'Transferência de Tecnologia', 'Contratos de Licenciamento'])"
+          >
+            <div
+              class="w-14 h-14 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-xl flex items-center justify-center mb-4 md:mb-6"
+            >
+              <i class="bi bi-lightbulb text-2xl md:text-3xl text-white"></i>
+            </div>
+            <h3
+              class="text-xl md:text-2xl font-display font-bold text-primary mb-3 md:mb-4"
+            >
+              Propriedade Intelectual
+            </h3>
+            <p
+              class="text-sm md:text-base text-gray mb-4 md:mb-6 leading-relaxed"
+            >
+              Consultoria completa para estruturação, crescimento e proteção do
+              seu negócio.
+            </p>
+            <span
+              class="text-main font-semibold text-xs md:text-sm flex items-center gap-2 group"
+            >
+              Saiba mais
+              <i
+                class="bi bi-arrow-right group-hover:translate-x-1 transition-transform"
+              ></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-16 md:py-24 lg:py-32">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-12 md:mb-16" data-aos="fade-down">
+          <span
+            class="text-main text-xs md:text-sm font-semibold uppercase tracking-wider mb-3 block"
+            >Diferenciais</span
+          >
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary mb-4"
+          >
+            Por Que Escolher Nosso Escritório
+          </h2>
+        </div>
+
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto"
+        >
+          <div class="expertise-item" data-aos="fade-right" data-aos-delay="0">
+            <i class="bi bi-star absolute left-2 top-1 text-white text-2xl"></i>
+            <h3
+              class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+            >
+              Atendimento Personalizado
+            </h3>
+            <p class="text-sm md:text-base text-gray leading-relaxed">
+              Cada cliente recebe atenção exclusiva e soluções customizadas para
+              suas necessidades específicas.
+            </p>
+          </div>
+
+          <div class="expertise-item" data-aos="fade-left" data-aos-delay="100">
+            <i
+              class="bi bi-clock-history absolute left-2 top-1 text-white text-2xl"
+            ></i>
+            <h3
+              class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+            >
+              Agilidade e Eficiência
+            </h3>
+            <p class="text-sm md:text-base text-gray leading-relaxed">
+              Processos otimizados e comunicação transparente para resultados
+              rápidos e efetivos.
+            </p>
+          </div>
+
+          <div
+            class="expertise-item"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
+            <i
+              class="bi bi-people absolute left-2 top-1 text-white text-2xl"
+            ></i>
+            <h3
+              class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+            >
+              Visão Estratégica
+            </h3>
+            <p class="text-sm md:text-base text-gray leading-relaxed">
+              Análise profunda do seu negócio para soluções que vão além do
+              jurídico.
+            </p>
+          </div>
+
+          <div class="expertise-item" data-aos="fade-left" data-aos-delay="300">
+            <i
+              class="bi bi-shield-check absolute left-2 top-1 text-white text-2xl"
+            ></i>
+            <h3
+              class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+            >
+              Segurança Total
+            </h3>
+            <p class="text-sm md:text-base text-gray leading-relaxed">
+              Sigilo absoluto e conformidade com as melhores práticas do mercado
+              jurídico.
+            </p>
+          </div>
+        </div>
+
+        <!-- CTA Expertise -->
+
+        <a
+          href="#contact"
+          class="flex justify-center mt-10 mx-auto max-w-[400px] w-full px-8 md:px-10 py-6 bg-gradient-to-br from-main to-accent text-white rounded-2xl font-bold text-sm md:text-base hover:shadow-2xl transform hover:scale-105 transition-all duration-500 ease-in-out"
+        >
+          Desejo atendimento de excelência
+        </a>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 md:py-24 lg:py-32 bg-gray-50">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-12 md:mb-16" data-aos="fade-down">
+          <span
+            class="text-main text-xs md:text-sm font-semibold uppercase tracking-wider mb-3 block"
+            >Depoimentos</span
+          >
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary"
+          >
+            O Que Dizem Nossos Clientes
+          </h2>
+        </div>
+
+        <div class="max-w-4xl mx-auto">
+          <div
+            class="bg-white rounded-3xl shadow-2xl p-8 md:p-12 md:py-14 relative"
+            data-aos="zoom-in"
+          >
+            <i
+              class="bi bi-quote text-6xl md:text-8xl text-main/10 absolute -top-4 md:-top-10 left-4 md:left-6"
+            ></i>
+
+            <div class="testimonial-slide active relative z-10">
+              <p
+                class="text-base md:text-lg lg:text-xl text-gray italic mb-6 md:mb-8 leading-relaxed"
+              >
+                "A Dra. Helena foi fundamental para estruturar nossa empresa
+                desde o início. Sua visão estratégica nos ajudou a evitar
+                problemas que nem imaginávamos existir. Recomendo de olhos
+                fechados!"
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="text-white font-bold text-lg md:text-xl"
+                    >RC</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="font-display font-bold text-primary text-base md:text-lg"
+                  >
+                    Ricardo Costa
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray">
+                    CEO, TechStart Solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide relative z-10">
+              <p
+                class="text-base md:text-lg lg:text-xl text-gray italic mb-6 md:mb-8 leading-relaxed"
+              >
+                "Profissionalismo impecável! A adequação à LGPD que parecia
+                impossível foi resolvida com clareza e eficiência. Sentimos
+                total segurança em todo o processo."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="text-white font-bold text-lg md:text-xl"
+                    >MF</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="font-display font-bold text-primary text-base md:text-lg"
+                  >
+                    Mariana Ferreira
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray">
+                    Diretora Jurídica, Grupo Inovação
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="testimonial-slide relative z-10">
+              <p
+                class="text-base md:text-lg lg:text-xl text-gray italic mb-6 md:mb-8 leading-relaxed"
+              >
+                "Excelente assessoria em nossa fusão. A Dra. Helena conduziu
+                todo o processo com maestria, antecipando riscos e garantindo a
+                segurança jurídica que precisávamos."
+              </p>
+              <div class="flex items-center gap-4">
+                <div
+                  class="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-br from-main to-accent rounded-full flex items-center justify-center flex-shrink-0"
+                >
+                  <span class="text-white font-bold text-lg md:text-xl"
+                    >PA</span
+                  >
+                </div>
+                <div>
+                  <h4
+                    class="font-display font-bold text-primary text-base md:text-lg"
+                  >
+                    Paulo Almeida
+                  </h4>
+                  <p class="text-xs md:text-sm text-gray">
+                    Sócio, Almeida & Partners
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex justify-center gap-3 mt-8 md:mt-10">
+              <button
+                onclick="changeSlide(0)"
+                class="slide-dot w-3 h-3 rounded-full bg-main transition-all"
+              ></button>
+              <button
+                onclick="changeSlide(1)"
+                class="slide-dot w-3 h-3 rounded-full bg-gray-300 transition-all"
+              ></button>
+              <button
+                onclick="changeSlide(2)"
+                class="slide-dot w-3 h-3 rounded-full bg-gray-300 transition-all"
+              ></button>
+            </div>
+          </div>
+
+          <!-- CTA Depoimentos -->
+          <a
+            href="#contact"
+            class="underline flex justify-center mt-10 mx-auto max-w-[400px] w-full px-8 md:px-10 py-4 bg-white text-main rounded-full font-bold text-sm md:text-base hover:shadow-2xl transform hover:scale-105 transition-all duration-500 ease-in-out"
+          >
+            Quero resolver meu problema agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 md:py-24 lg:py-32">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="text-center mb-12 md:mb-16" data-aos="fade-down">
+          <span
+            class="text-main text-xs md:text-sm font-semibold uppercase tracking-wider mb-3 block"
+          >
+            Dúvidas Frequentes
+          </span>
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-primary mb-4"
+          >
+            Perguntas e Respostas
+          </h2>
+          <p class="text-base md:text-lg text-gray max-w-2xl mx-auto">
+            Tire suas dúvidas sobre nossos serviços e processos
+          </p>
+        </div>
+
+        <div class="max-w-4xl mx-auto space-y-4">
+          <!-- FAQ Item 1 -->
+          <div
+            class="faq-item bg-white rounded-2xl shadow-lg p-6 md:p-8 relative"
+            onclick="toggleFaq(this)"
+            data-aos="flip-right"
+            data-aos-delay="0"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <h3
+                  class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+                >
+                  Como funciona a primeira consulta?
+                </h3>
+                <div class="faq-answer">
+                  <p class="text-sm md:text-base text-gray leading-relaxed">
+                    A primeira consulta é gratuita e pode ser realizada
+                    presencialmente ou online. Nela, você apresenta seu caso,
+                    analisamos a situação e já oferecemos orientações iniciais
+                    sobre os melhores caminhos jurídicos a seguir. É também o
+                    momento para conhecer nossa forma de trabalho e esclarecer
+                    todas as suas dúvidas.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="faq-icon flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-main/10 rounded-lg flex items-center justify-center"
+              >
+                <i class="bi bi-chevron-down text-main text-lg md:text-xl"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="faq-item bg-white rounded-2xl shadow-lg p-6 md:p-8 relative"
+            onclick="toggleFaq(this)"
+            data-aos="flip-left"
+            data-aos-delay="100"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <h3
+                  class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+                >
+                  Quanto tempo leva um processo jurídico?
+                </h3>
+                <div class="faq-answer">
+                  <p class="text-sm md:text-base text-gray leading-relaxed">
+                    O prazo varia conforme a complexidade do caso e a área do
+                    direito. Processos de mediação podem ser resolvidos em
+                    semanas, enquanto ações judiciais podem levar meses ou anos.
+                    Na primeira consulta, fornecemos uma estimativa realista
+                    baseada na sua situação específica e sempre buscamos as
+                    soluções mais ágeis possíveis.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="faq-icon flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-main/10 rounded-lg flex items-center justify-center"
+              >
+                <i class="bi bi-chevron-down text-main text-lg md:text-xl"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="faq-item bg-white rounded-2xl shadow-lg p-6 md:p-8 relative"
+            onclick="toggleFaq(this)"
+            data-aos="flip-right"
+            data-aos-delay="200"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <h3
+                  class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+                >
+                  Quais são as formas de pagamento?
+                </h3>
+                <div class="faq-answer">
+                  <p class="text-sm md:text-base text-gray leading-relaxed">
+                    Oferecemos diferentes modalidades: honorários fixos para
+                    serviços consultivos e contratuais, honorários por hora para
+                    assessoria continuada, e honorários de êxito em ações
+                    judiciais. Também aceitamos parcelamento e diversas formas
+                    de pagamento. Tudo é definido de forma transparente antes do
+                    início dos trabalhos.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="faq-icon flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-main/10 rounded-lg flex items-center justify-center"
+              >
+                <i class="bi bi-chevron-down text-main text-lg md:text-xl"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="faq-item bg-white rounded-2xl shadow-lg p-6 md:p-8 relative"
+            onclick="toggleFaq(this)"
+            data-aos="flip-left"
+            data-aos-delay="300"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <h3
+                  class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+                >
+                  Atendem empresas de pequeno porte?
+                </h3>
+                <div class="faq-answer">
+                  <p class="text-sm md:text-base text-gray leading-relaxed">
+                    Sim! Atendemos desde microempreendedores individuais até
+                    grandes corporações. Acreditamos que toda empresa,
+                    independente do porte, merece segurança jurídica de
+                    qualidade. Oferecemos soluções personalizadas e acessíveis
+                    para cada perfil de negócio, com a mesma excelência de
+                    atendimento.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="faq-icon flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-main/10 rounded-lg flex items-center justify-center"
+              >
+                <i class="bi bi-chevron-down text-main text-lg md:text-xl"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div
+            class="faq-item bg-white rounded-2xl shadow-lg p-6 md:p-8 relative"
+            onclick="toggleFaq(this)"
+            data-aos="flip-right"
+            data-aos-delay="400"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <h3
+                  class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+                >
+                  É possível resolver sem ir para a justiça?
+                </h3>
+                <div class="faq-answer">
+                  <p class="text-sm md:text-base text-gray leading-relaxed">
+                    Sim, e essa é sempre nossa primeira recomendação! A mediação
+                    e arbitragem são alternativas mais rápidas, econômicas e
+                    discretas. Como mediadora certificada, conduzo processos de
+                    negociação que evitam desgastes e custos de processos
+                    judiciais. Recorremos à justiça apenas quando necessário.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="faq-icon flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-main/10 rounded-lg flex items-center justify-center"
+              >
+                <i class="bi bi-chevron-down text-main text-lg md:text-xl"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div
+            class="faq-item bg-white rounded-2xl shadow-lg p-6 md:p-8 relative"
+            onclick="toggleFaq(this)"
+            data-aos="flip-left"
+            data-aos-delay="500"
+          >
+            <div class="flex items-start justify-between gap-4">
+              <div class="flex-1">
+                <h3
+                  class="text-lg md:text-xl font-display font-bold text-primary mb-2"
+                >
+                  Como funciona o atendimento online?
+                </h3>
+                <div class="faq-answer">
+                  <p class="text-sm md:text-base text-gray leading-relaxed">
+                    O atendimento online é realizado por videoconferência em
+                    plataformas seguras. Documentos podem ser compartilhados
+                    digitalmente com total segurança e assinatura eletrônica
+                    válida juridicamente. Essa modalidade oferece a mesma
+                    qualidade do atendimento presencial, com mais praticidade e
+                    flexibilidade de horários.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="faq-icon flex-shrink-0 w-8 h-8 md:w-10 md:h-10 bg-main/10 rounded-lg flex items-center justify-center"
+              >
+                <i class="bi bi-chevron-down text-main text-lg md:text-xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA FAQ -->
+        <div
+          class="flex justify-center items-center flex-col mt-10 font-bold text-lg"
+          data-aos="fade-down"
+        >
+          <h4>Ainda com dúvidas?</h4>
+          <a
+            href="#contact"
+            class="my-2 underline border-main text-main rounded-2xl font-bold text-sm md:text-base transform hover:scale-105 transition-all text-center max-w-[400px] w-full mx-auto flex justify-center transform hover:animate-pulse transition-all"
+            data-aos="zoom-in"
+          >
+            Entre em contato
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 md:py-24 cta-gradient text-white">
+      <div
+        class="container mx-auto px-4 md:px-6 text-center"
+        data-aos="fade-up"
+      >
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-4 md:mb-6"
+        >
+          Pronto para Proteger Seu Negócio?
+        </h2>
+        <p
+          class="text-base md:text-lg lg:text-xl mb-8 md:mb-10 max-w-2xl mx-auto opacity-90"
+        >
+          Agende uma consulta gratuita e descubra como podemos ajudar sua
+          empresa a crescer com segurança jurídica.
+        </p>
+        <a
+          href="#contact"
+          class="inline-block px-8 md:px-10 py-4 bg-white text-primary rounded-full font-bold text-sm md:text-base hover:shadow-2xl transform hover:scale-105 transition-all duration-500 ease-in-out"
+        >
+          Agendar Consulta
+        </a>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 md:py-24 lg:py-32">
+      <div class="container mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 md:gap-16 lg:gap-20">
+          <div
+            data-aos="fade-up"
+            class="bg-gradient-to-br from-main to-accent rounded-2xl p-8 max-lg:p-10"
+          >
+            <span
+              class="text-main brightness-[2] text-xs md:text-sm font-semibold uppercase tracking-wider mb-3 block max-lg:text-center"
+              >Entre em Contato</span
+            >
+            <h2
+              class="text-3xl max-lg:mb-10 md:text-4xl lg:text-4xl font-display font-bold text-white mb-4 md:mb-6 max-lg:text-center"
+            >
+              Vamos Conversar<br />Sobre Seu Caso
+            </h2>
+
+            <div class="bg-main brightness-[0.7] w-full h-[2px] my-6"></div>
+
+            <div
+              class="space-y-6 max-lg:gap-5 max-lg:text-center max-lg:flex max-lg:justify-center max-lg:items-center max-lg:flex-col"
+            >
+              <div
+                class="contact-info-item flex items-start gap-4 max-lg:flex-col shadow-xl bg-gradient-to-br from-main to-accent brightness-[1.2] w-full max-lg:items-center p-3 rounded-2xl"
+              >
+                <div
+                  class="w-12 h-12 max-lg:mx-auto bg-main/10 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i
+                    class="bi bi-geo-alt text-main text-2xl brightness-[2]"
+                  ></i>
+                </div>
+                <div>
+                  <h4
+                    class="font-semibold text-white mb-1 text-sm md:text-base"
+                  >
+                    Endereço
+                  </h4>
+                  <p class="text-sm md:text-base text-gray-300">
+                    Av. Paulista, 1500 - São Paulo/SP
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="contact-info-item flex items-start gap-4 max-lg:flex-col shadow-xl bg-gradient-to-br from-main to-accent brightness-[1.2] w-full max-lg:items-center p-3 rounded-2xl"
+              >
+                <div
+                  class="w-12 h-12 max-lg:mx-auto bg-main/10 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i
+                    class="bi bi-telephone text-main text-2xl brightness-[2]"
+                  ></i>
+                </div>
+                <div>
+                  <h4
+                    class="font-semibold text-white mb-1 text-sm md:text-base"
+                  >
+                    Telefone
+                  </h4>
+                  <p class="text-sm md:text-base text-gray-300">
+                    (11) 3456-7890
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="contact-info-item flex items-start gap-4 max-lg:flex-col shadow-xl bg-gradient-to-br from-main to-accent brightness-[1.2] w-full max-lg:items-center p-3 rounded-2xl"
+              >
+                <div
+                  class="w-12 h-12 max-lg:mx-auto bg-main/10 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i
+                    class="bi bi-envelope text-main brightness-[2] text-2xl"
+                  ></i>
+                </div>
+                <div>
+                  <h4
+                    class="font-semibold text-white mb-1 text-sm md:text-base"
+                  >
+                    Email
+                  </h4>
+                  <p class="text-sm md:text-base text-gray-300">
+                    contato@helenamonteiro.adv.br
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="contact-info-item flex items-start gap-4 max-lg:flex-col shadow-xl bg-gradient-to-br from-main to-accent brightness-[1.2] w-full max-lg:items-center p-3 rounded-2xl"
+              >
+                <div
+                  class="w-12 h-12 max-lg:mx-auto bg-main/10 rounded-lg flex items-center justify-center flex-shrink-0"
+                >
+                  <i class="bi bi-clock text-main brightness-[2] text-2xl"></i>
+                </div>
+                <div>
+                  <h4
+                    class="font-semibold text-white mb-1 text-sm md:text-base"
+                  >
+                    Horário
+                  </h4>
+                  <p class="text-sm md:text-base text-gray-300">
+                    Seg - Sex: 9h às 18h
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-aos="fade-up">
+            <form
+              id="contactForm"
+              class="bg-white rounded-2xl shadow-xl p-6 md:p-8 border border-gray-200 h-[600px]"
+            >
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6"
+              >
+                <div>
+                  <label
+                    class="block text-xs md:text-sm font-semibold text-primary mb-2"
+                    >Nome Completo</label
+                  >
+                  <input
+                    type="text"
+                    required
+                    class="form-input w-full px-4 py-3 border-2 border-gray-200 rounded-lg text-sm md:text-base transition-all"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-xs md:text-sm font-semibold text-primary mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    required
+                    class="form-input w-full px-4 py-3 border-2 border-gray-200 rounded-lg text-sm md:text-base transition-all"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-4 md:mb-6"
+              >
+                <div>
+                  <label
+                    class="block text-xs md:text-sm font-semibold text-primary mb-2"
+                    >Telefone</label
+                  >
+                  <input
+                    type="tel"
+                    required
+                    class="form-input w-full px-4 py-3 border-2 border-gray-200 rounded-lg text-sm md:text-base transition-all"
+                  />
+                </div>
+                <div>
+                  <label
+                    class="block text-xs md:text-sm font-semibold text-primary mb-2"
+                    >Área de Interesse</label
+                  >
+                  <select
+                    required
+                    class="form-input w-full px-4 py-3 border-2 border-gray-200 rounded-lg text-sm md:text-base transition-all"
+                  >
+                    <option value="">Selecione</option>
+                    <option>Direito Empresarial</option>
+                    <option>Contratos</option>
+                    <option>Mediação</option>
+                    <option>Compliance</option>
+                    <option>LGPD</option>
+                    <option>Propriedade Intelectual</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="mb-6 md:mb-8">
+                <label
+                  class="block text-xs md:text-sm font-semibold text-primary mb-2"
+                  >Mensagem</label
+                >
+                <textarea
+                  required
+                  rows="4"
+                  class="form-input w-full px-4 py-3 border-2 border-gray-200 rounded-lg resize-none text-sm md:text-base transition-all"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-primary w-full py-4 bg-main text-white rounded-lg font-bold text-sm md:text-base hover:shadow-lg transition-all"
+              >
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="w-full border-main bg-main rounded-2xl text-center mt-16"
+          data-aos="zoom-in"
+        >
+          <p class="text-sm text-gray-300 flex gap-1 justify-center py-2">
+            <i class="bi bi-geo-alt-fill"></i> Av. Paulista, 1500 - São
+            Paulo/SP, 01310-100
+          </p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.178469763376!2d-46.65785362457299!3d-23.562032878799346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c925263541%3A0x4b30df73fca5a36b!2sAv.%20Paulista%2C%201500%20-%20Bela%20Vista%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2001310-100!5e0!3m2!1spt-BR!2sbr!4v1765207524901!5m2!1spt-BR!2sbr"
+            width="100%"
+            height="350"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="rounded-2xl border border-2"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12 md:py-16">
+      <div class="container mx-auto px-4 md:px-6">
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12"
+        >
+          <div>
+            <h3 class="text-2xl md:text-3xl font-display font-bold mb-4">
+              Helena <span class="text-main brightness-[1.5]">Monteiro</span>
+            </h3>
+            <p class="text-sm md:text-base text-gray-300 leading-relaxed">
+              Advocacia estratégica e consultoria jurídica para empresas e
+              profissionais.
+            </p>
+            <p
+              class="text-sm md:text-base text-main my-4 font-bold brightness-[1.5]"
+            >
+              OAB/SP 123.456
+            </p>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-base md:text-lg mb-4">Links Rápidos</h4>
+            <ul class="space-y-2 text-sm md:text-base">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-300 hover:text-main transition-colors"
+                  >Início</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-300 hover:text-main transition-colors"
+                  >Sobre</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-300 hover:text-main transition-colors"
+                  >Serviços</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-300 hover:text-main transition-colors"
+                  >Contato</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-base md:text-lg mb-4">Serviços</h4>
+            <ul class="space-y-2 text-sm md:text-base">
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-300 hover:text-main transition-colors"
+                  >Direito Empresarial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-300 hover:text-main transition-colors"
+                  >Contratos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-300 hover:text-main transition-colors"
+                  >Mediação</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-300 hover:text-main transition-colors"
+                  >Compliance</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-base md:text-lg mb-4">Contato</h4>
+            <div class="flex flex-col gap-1 lg:break-all">
+              <p class="text-sm md:text-base text-gray-300 flex gap-1">
+                <i class="bi bi-geo-alt-fill"></i> Av. Paulista, 1500 - São
+                Paulo/SP
+              </p>
+              <p class="text-sm md:text-base text-gray-300 flex gap-1">
+                <i class="bi bi-envelope-fill"></i>
+                contato@helenamonteiro.adv.br
+              </p>
+              <p class="text-sm md:text-base text-gray-300 flex gap-1">
+                <i class="bi bi-telephone-fill"></i> (11) 3456-7890
+              </p>
+              <div class="flex gap-2 my-2 justify-start">
+                <a
+                  href="https://linkedin.com/in/rafaelsfront"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="w-12 h-12 rounded-lg flex items-center text-white hover:bg-primary hover:text-white transition-all"
+                >
+                  <i class="bi bi-linkedin text-2xl"></i>
+                </a>
+                <a
+                  href="https://github.com/1faeell"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="w-12 h-12 rounded-lg flex items-center text-white hover:bg-primary hover:text-white transition-all"
+                >
+                  <i class="bi bi-github text-2xl"></i>
+                </a>
+                <a
+                  href="https://instagram.com/fael.front"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="w-12 h-12 rounded-lg flex items-center text-white hover:bg-primary hover:text-white transition-all"
+                >
+                  <i class="bi bi-instagram text-2xl"></i>
+                </a>
+                <a
+                  href="https://wa.me/5571988327708"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="w-12 h-12 rounded-lg flex items-center text-white hover:bg-primary hover:text-white transition-all"
+                >
+                  <i class="bi bi-whatsapp text-2xl"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-white/10 pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs md:text-sm"
+        >
+          <p class="text-gray-300 text-center md:text-left">
+            © 2025 Helena Monteiro Advocacia. Todos os direitos reservados.
+          </p>
+          <p class="text-gray-300 text-center md:text-right">
+            Desenvolvido por
+            <a
+              href="https://portfolio-fael.vercel.app"
+              rel="noopener noreferrer"
+              target="_blank"
+              class="font-bold text-main brightness-[1.5] hover:brightness-[2] hover:underline"
+              >Rafael S.</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a
+      href="https://wa.me/5571988327708"
+      rel="noopener noreferrer"
+      target="_blank"
+      class="fixed bottom-6 right-6 w-14 h-14 md:w-16 md:h-16 bg-green-500 text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50"
+    >
+      <i class="bi bi-whatsapp text-2xl md:text-3xl"></i>
+    </a>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content p-6 md:p-10">
+        <button
+          onclick="closeModal()"
+          class="absolute top-4 right-4 w-10 h-10 flex items-center justify-center text-gray hover:text-main transition-colors"
+        >
+          <i class="bi bi-x-lg text-2xl"></i>
+        </button>
+
+        <div
+          id="modalIcon"
+          class="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-main to-accent rounded-xl flex items-center justify-center mb-6"
+        >
+          <i class="bi bi-briefcase text-3xl md:text-4xl text-white"></i>
+        </div>
+
+        <h3
+          id="modalTitle"
+          class="text-2xl md:text-3xl font-display font-bold text-primary mb-4"
+        ></h3>
+        <p
+          id="modalDesc"
+          class="text-base md:text-lg text-gray mb-6 md:mb-8 leading-relaxed"
+        ></p>
+
+        <h4 class="font-bold text-primary mb-4 text-base md:text-lg">
+          O que inclui:
+        </h4>
+        <ul id="modalList" class="space-y-3 mb-6 md:mb-8"></ul>
+
+        <a
+          href="#contact"
+          onclick="closeModal()"
+          class="inline-block w-full py-4 bg-main text-white text-center rounded-lg font-bold text-sm md:text-base hover:shadow-lg transition-all"
+        >
+          Solicitar Proposta
+        </a>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
