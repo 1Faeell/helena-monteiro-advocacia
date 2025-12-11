@@ -35,4 +35,5 @@ Site Landing Page desenvolvido para a Dra. Helena Monteiro, apresentando serviç
 
 ## 🖥 Preview
 
-[<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/a4adacda-c8a7-492c-a72e-7fb91308cfdc" />](https://1faeell.github.io/helena-monteiro-advocacia/)
+[<img width="1440" height="900" alt="image" src="https://github.com/user-attachments/assets/f8063c45-36b0-43a5-82ba-2b253962175b" />
+](https://1faeell.github.io/helena-monteiro-advocacia/)
